@@ -91,14 +91,7 @@
             <div class="text-2xl font-bold text-blue-600">
                 MyBrand
             </div>
-    <!-- Desktop Menu -->
-            <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
-                <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
-                <li><a href="#" class="hover:text-blue-600 transition">About</a></li>
-                <li><a href="#" class="hover:text-blue-600 transition">Services</a></li>
-                <li><a href="#" class="hover:text-blue-600 transition">Contact</a></li>
-            </ul>
-
+        
             <!-- Desktop Button -->
             <div class="hidden md:block">
                 <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-semibold transition">
@@ -128,6 +121,21 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <div class="p-8 text-center mt-10">
+        <h1 class="text-3xl font-extrabold text-gray-800">স্টেপ ৫: রেসপন্সিভ মোবাইল মেনু</h1>
+        <p class="text-gray-500 mt-2">ব্রাউজার ছোট করে ডানপাশের হ্যামবার্গার আইকনে ক্লিক করে দেখুন!</p>
+    </div>
+
+    <!-- JavaScript to toggle mobile menu -->
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
 
 </body>
